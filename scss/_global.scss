@@ -1,0 +1,11 @@
+html {
+    box-sizing: border-box;
+    background-image: url('../Images/BackgroundImage3.jpg');
+    background-size: cover;
+    margin: auto 0;
+}
+
+*, *:before, *:after {
+
+    box-sizing: inherit;
+}
