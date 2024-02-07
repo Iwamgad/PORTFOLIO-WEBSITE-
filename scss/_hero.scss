@@ -1,16 +1,66 @@
 .hero{
-    border: solid 2px;
-    border-radius: 10px;
-    border-color: rgb(8, 10, 10);
-    // padding: 100px;
-    margin-top: 10px;
-    width: 200px;
-    height: 300px;
+    // border: solid 2px;
+    // border-radius: 10px;
+    // border-color: rgb(8, 10, 10);
+    // // padding: 100px;
+    // margin-top: 10px;
+    // width: 200px;
+    // height: 300px;
 
+    &__grid__wrapper1 {
+
+        font-family: $fontPrimary;
+        color: $fontColor;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        padding-left: 20px;
+        padding-right: 60px;
+        padding-bottom: 150px;
     
+        &__box > img {
+            width: 625px;
+            height: 400px; 
+            opacity: 0.6; 
+            border: 0.1px;
+            border-radius: 10px;
+            padding-top: 10px;
+        }
     
-
-
-
-
+        h1 {
+           font-size: 50px;
+           font-weight: bold;
+           color:#E8EDC8; 
+           padding-bottom: 20px;
+        }
+    
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            font-style: italic;
+            color:#E8EDC8;
+            padding-bottom: 50px;
+    
+        }
+    
+        &__box__shelf__button1 {
+            font-family: $fontPrimary;
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+            border: solid 2px #d4b021;
+            border-radius: 30px;
+            color: $fontColor;
+            background-color: $buttonOneColor;
+            padding: 20px 60px;
+    
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                display: block;
+            }
+            
+        }
+    }
 }
+

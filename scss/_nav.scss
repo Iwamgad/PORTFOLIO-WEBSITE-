@@ -1,27 +1,80 @@
-nav{
-    border: solid 2px;
-    border-radius: 10px;
-    border-color: rgb(239, 214, 101);
-    padding: 0;
-    margin: 0;
-    background: #e6230060;
-    text-decoration: none;
+.nav{
     
-    &__logo{
-
-
-    }
-    
-    &__list{
-        color: $fontColor;
-        padding: 10px 16px;
-        font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-decoration: none;
-        list-style: none;
-        display: block; 
-    }
-
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
    
+    // background: #d0493129;
+    border: solid 2px;
+    // border-color: rgba(222, 14, 14, 0.36);
+    a {
+        // color: $fontColor;
+        text-decoration: none;
+    }
+  
+    &__logo{
+        // border: solid 2px;
+        //     border-radius: 20px;
+        //     border-color: rgba(2, 2, 2, 0);
+        color: $fontColor;
+        font-size: 50px;
+        font-family: 'Brush Script MT', cursive;
+        line-height: 80px;
+        padding: 0 50px;
+        font-weight: normal;
+        text-decoration: none;
+
+        a {
+            color: $fontColor;
+            text-decoration: none;
+        }
+    }
     
+    &__list {
+        
+        float: right;
+        margin-right: 20px;
+        list-style: none;
+        // border: solid 2px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: normal;
+        
+        li{
+            border: solid 2px;
+            display: inline-block;
+            line-height: 30px;
+            margin: 0 5px;
+            padding: 25px 20px 0px 20px;
+        }
+        
+        &__link {
+            color: $fontColor;
+            text-decoration: none; 
+            font-size: 20px;
+            margin-left: auto;
+            // padding: 0 30px;   
+        }
+
+        &__link::after{
+            content: '';
+            width: 0px;
+            height: 1.5px;
+            background: $underLinksColor;
+            display: block;
+            // padding: 0 40px;
+            transition: 0.5s;
+        }
+
+        &__link:hover::after {  
+            width: 100%; 
+        }
+
+    } 
 }
+
+// .container{
+//     background: #e0e019bd;
+//     padding: 0;
+//     width: 100%;
+// }
+

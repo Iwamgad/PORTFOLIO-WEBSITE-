@@ -6,33 +6,109 @@ html {
 }
 
 *, *:before, *:after {
+  padding: 0;
+  margin: 0;
   box-sizing: inherit;
 }
 
-nav {
+.nav {
+  height: 80px;
+  width: 100%;
+  padding-top: 10px;
   border: solid 2px;
-  border-radius: 10px;
-  border-color: rgb(239, 214, 101);
-  padding: 0;
-  margin: 0;
-  background: rgba(230, 35, 0, 0.3764705882);
+}
+.nav a {
   text-decoration: none;
 }
-nav__list {
+.nav__logo {
   color: #E8EDC8;
-  padding: 10px 16px;
-  font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-family: "Brush Script MT", cursive;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: normal;
   text-decoration: none;
+}
+.nav__logo a {
+  color: #E8EDC8;
+  text-decoration: none;
+}
+.nav__list {
+  float: right;
+  margin-right: 20px;
   list-style: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+}
+.nav__list li {
+  border: solid 2px;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+  padding: 25px 20px 0px 20px;
+}
+.nav__list__link {
+  color: #E8EDC8;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: auto;
+}
+.nav__list__link::after {
+  content: "";
+  width: 0px;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.5882352941);
   display: block;
+  transition: 0.5s;
+}
+.nav__list__link:hover::after {
+  width: 100%;
 }
 
-.hero {
-  border: solid 2px;
+.hero__grid__wrapper1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #E8EDC8;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding-left: 20px;
+  padding-right: 60px;
+  padding-bottom: 150px;
+}
+.hero__grid__wrapper1__box > img {
+  width: 625px;
+  height: 400px;
+  opacity: 0.6;
+  border: 0.1px;
   border-radius: 10px;
-  border-color: rgb(8, 10, 10);
-  margin-top: 10px;
-  width: 200px;
-  height: 300px;
+  padding-top: 10px;
+}
+.hero__grid__wrapper1 h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #E8EDC8;
+  padding-bottom: 20px;
+}
+.hero__grid__wrapper1 h2 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: italic;
+  color: #E8EDC8;
+  padding-bottom: 50px;
+}
+.hero__grid__wrapper1__box__shelf__button1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border: solid 2px #d4b021;
+  border-radius: 30px;
+  color: #E8EDC8;
+  background-color: rgba(9, 61, 95, 0.76);
+  padding: 20px 60px;
+}
+.hero__grid__wrapper1__box__shelf__button1 a {
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
