@@ -14,55 +14,98 @@
 
 <body>
     <nav class="nav">
-        <a href="#"><img class = "nav__logo" href="../PORTFOLIO-WEBSITE/Images/Logo.jpg" alt="Dagmawi"></a>
-        <!-- <label class="nav__logo"><a href="">Dagmawi</a></label> -->
+        <!-- <a href="#"><img class = "nav__logo" href="../PORTFOLIO-WEBSITE/Images/Logo.png" alt="Dagmawi"></a> -->
+        <label class="nav__logo"><a href="#">Dagi</a></label>
         <ul class="nav__list">  
             <li><a href="#" class="nav__list__link active">HOME</a></li>
-            <li><a href="#" class="nav__list__link">ABOUT</a></li>
-            <li><a href="#" class="nav__list__link">SKILLS</a></li>
-            <li><a href="#" class="nav__list__link">PORTFOLIO</a></li>
-            <li><a href="#" class="nav__list__link">CONTACT</a></li>
+            <li><a href="#about" class="nav__list__link">ABOUT</a></li>
+            <li><a href="#skills" class="nav__list__link">SKILLS</a></li>
+            <li><a href="#portfolio" class="nav__list__link">PORTFOLIO</a></li>
+            <li><a href="#contact" class="nav__list__link">CONTACT</a></li>
         </ul>
     </nav>
 
 
-    <section class="hero" >
-        <div class="hero__grid__wrapper1__box">
-            <h1> What Kind of Movies <br> Do You Want ? <br> We Have Them !!! </h1>
-            <h2> The most secure and preference oriented movie searching website for your need.</h2>
-            <a href="/shelf" class="hero__grid__wrapper1__box__shelf">
-                <button class="grid__wrapper1__box__shelf__button1">
-                    GO TO SHELF
-                </button>
-            </a>
-        </div>
+    <section class="hero" id="hero">
+        
+        <div class="hero__container">
+            
+            <div class="hero__container__item">
+                <h1> Hi, I'm Dagmawi </h1>
+                <h2> A software engineer with a passion for creating innovative solutions and who has done many projects in Java and Python. Skilled in full-stack development, agile methodologies, and continuous integration. 
+                    Dedicated to delivering high-quality code and collaborating with cross-functional teams to drive project success. Seeking new opportunities to leverage my expertise and contribute to cutting-edge software development projects.
+                </h2>
 
-        <div class="hero__grid__wrapper1__box">
-            <img class= "hero__grid__wrapper1__box__image" src="{{url_for('static', filename='Images/Grid12.jpg')}}" alt="">
+                <a href="#contact" class="hero__container__item__link">
+                    <button class="hero__container__item__button">
+                        ASK ME 
+                    </button>
+                </a>
+            </div>
+
+            <div class="hero__container__image">
+                <img class="saturate" src="/Images/BackgroundImage27.png" alt="dope">
+            </div>
+
+            
         </div>
 
     </section>
 
 
-    <section class="about">
+    <section class="about" id="about">
+        <h1> Hi, I'm Dagmawi </h1>
+        <h2> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nostrum deleniti veniam voluptates 
+            illum dolorum minima temporibus laborum iste consequuntur voluptatem reprehenderit eveniet? 
+            Eos odit mollitia veniam quo, iste soluta!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dignissimos esse exercitationem sit non consectetur? Blanditiis, ratione quam expedita dolore non mollitia quis, delectus praesentium eaque cupiditate, in consequuntur vel.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta explicabo voluptatem eum quos deserunt aut suscipit quia minus numquam dolore quasi id tempore dolorem porro, obcaecati iste iusto ullam molestias.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic minus numquam a obcaecati consequatur illum reiciendis vel molestiae dolor sint, deleniti perspiciatis, alias voluptatem iusto porro aspernatur magni. Tempora, impedit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus totam accusantium blanditiis eos laboriosam ducimus quas nam quisquam cum velit? Sint, dolor deleniti distinctio repellat nobis minima alias et ullam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea fugit perspiciatis fuga aliquam expedita consectetur quas natus! Provident tenetur exercitationem delectus, dolores dignissimos nostrum incidunt iure quod maxime et.
+        </h2>
+        
+        <div class="about__button">
 
+            <div class="about__button__item">
+                <a href="#contact" class="about__button__link">
+                    <button class="about__button__item__buttonOne">
+                        RESUME 
+                    </button>
+                </a>
+            </div>
 
+            <div class="about__button__item">
+                <a href="https://drive.google.com/" target="_blank" onclick="window.open('https://drive.google.com/file/d/1slu1RIDs4jb-IWbN9yN_FoERY368dE5y/view?usp=sharing'); window.open('https://drive.google.com/file/d/1ikEu6HncX4Qiz8L1WvA_tQHg_jQ_oBHk/view?usp=sharing');" class="about__button__link">
+                    <button class="about__button__item__buttonTwo">
+                        EDUCATION 
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        
     </section>
 
 
-    <section class="skills">
+    <section class="skills" id="skills">
         
 
     </section>
 
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
+        
+
+    </section>
+
+    <section class="contact" id="contact">
         
 
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
 
     </footer>
