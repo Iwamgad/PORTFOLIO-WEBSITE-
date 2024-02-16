@@ -210,20 +210,53 @@ html {
   height: 600px;
 }
 .skills h1 {
-  color: aliceblue;
-  padding: 20px 0px;
+  font-size: 50px;
+  color: yellow;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.skills h2 {
+  color: rgb(58, 2, 2);
+  font-family: "Audiowide", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.skills__frontend {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .skills__frontend img {
   width: 100px;
   height: 100px;
-  border: solid 2px;
-  border-color: aqua;
+  padding: 15px 15px;
+  transition: 1s;
+}
+.skills__frontend img:hover {
+  width: 150px;
+  height: 150px;
+}
+.skills__backend {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .skills__backend img {
   width: 100px;
   height: 100px;
-  border: solid 2px;
-  border-color: aqua;
+  padding: 15px 15px;
+  transition: 1s;
+}
+.skills__backend img:hover {
+  width: 150px;
+  height: 150px;
 }
 
 .portfolio {

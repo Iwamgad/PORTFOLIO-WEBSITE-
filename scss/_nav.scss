@@ -10,14 +10,10 @@
     width: 100%;
 
     a {
-        // color: $fontColor;
         text-decoration: none;
     }
   
     &__logo{
-        // border: solid 2px;
-        //     border-radius: 20px;
-        //     border-color: rgba(2, 2, 2, 0);
         color: $fontColor;
         font-size: 80px;
         font-family: 'Brush Script MT', cursive;
@@ -41,7 +37,6 @@
         font-weight: normal;
         
         li{
-            // border: solid 2px;
             display: inline-block;
             line-height: 30px;
             margin: 0 5px;
