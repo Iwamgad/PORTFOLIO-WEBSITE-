@@ -26,33 +26,16 @@
         &__item{  
             padding: 0px 30px;
             border: solid 2px;
-            // border-color: aqua;
+            
             &__buttonOne{
-                // align-self: center;
-                // font-family: $fontPrimary;
-                // font-size: 15px;
-                // font-weight: bold;
-                // border: solid 2px #d42121;
-                // border-radius: 30px;
-                // color: $fontColor;
-                // background-color: #c80000;
-                // padding: 20px 60px;
-        
-                // a {
-                //     font-size: 20px;
-                //     text-decoration: none;
-                //     display: block;
-                // }
-        
-                // padding-top: 20px;
-                // transition: box-shadow 0.5s;
-
                 font-family: $fontPrimary;
                 font-size: 15px;
                 font-weight: bold;
                 border: solid 2px #d42121;
                 border-radius: 30px;
                 color: $fontColor;
+                display: inline-block;
+                // background-color: rgba(102, 15, 2, 0.955);
                 background-color: $buttonOneColor;
                 padding: 20px 60px;
 
@@ -61,6 +44,14 @@
                     text-decoration: none;
                     display: block;
                 }
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    float:right; 
+                    margin-left:0.5em
+                }
+
                 padding-top: 20px;
 
                 transition: box-shadow 0.5s;
@@ -71,25 +62,6 @@
             }
 
             &__buttonTwo{
-                // align-self: center;
-                // font-family: $fontPrimary;
-                // font-size: 15px;
-                // font-weight: bold;
-                // border: solid 2px #d42121;
-                // border-radius: 30px;
-                // color: $fontColor;
-                // background-color: #c80000;
-                // padding: 20px 60px;
-        
-                // a {
-                //     font-size: 20px;
-                //     text-decoration: none;
-                //     display: block;
-                // }
-        
-                // padding-top: 20px;
-                // transition: box-shadow 0.5s;
-
                 font-family: $fontPrimary;
                 font-size: 15px;
                 font-weight: bold;
@@ -104,7 +76,13 @@
                     text-decoration: none;
                     display: block;
                 }
-                
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    float:right; 
+                    margin-left:0.5em
+                }
 
                 transition: box-shadow 0.5s;
             }
