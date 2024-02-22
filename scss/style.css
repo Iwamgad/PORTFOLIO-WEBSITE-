@@ -207,7 +207,8 @@ html {
   border: solid 2px;
   border-color: rgb(177, 188, 30);
   width: 100%;
-  height: 600px;
+  height: 800px;
+  padding: 60px;
 }
 .skills h1 {
   font-size: 50px;
@@ -217,17 +218,23 @@ html {
   padding-top: 10px;
 }
 .skills h2 {
-  color: rgb(58, 2, 2);
+  color: yellow;
   font-family: "Audiowide", sans-serif;
   padding-top: 5px;
   padding-bottom: 20px;
+  padding-left: 35px;
+}
+.skills h3 {
+  color: rgb(247, 241, 241);
   padding-left: 20px;
 }
 .skills__frontend {
   padding-left: 20px;
   padding-bottom: 20px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
   -moz-column-gap: 5px;
        column-gap: 5px;
 }
@@ -244,7 +251,8 @@ html {
 .skills__backend {
   padding-left: 20px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
   -moz-column-gap: 5px;
        column-gap: 5px;
 }
@@ -258,6 +266,24 @@ html {
   width: 150px;
   height: 150px;
 }
+.skills__programmingLanguage {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.skills__programmingLanguage img {
+  width: 100px;
+  height: 100px;
+  padding: 15px 15px;
+  transition: 1s;
+}
+.skills__programmingLanguage img:hover {
+  width: 150px;
+  height: 150px;
+}
 
 .portfolio {
   border: solid 2px;
@@ -267,8 +293,6 @@ html {
 }
 
 .contact {
-  border: solid 2px;
-  border-color: rgb(177, 188, 30);
   width: 100%;
   height: 400px;
 }

@@ -2,7 +2,9 @@
     border: solid 2px;
     border-color: rgb(177, 188, 30);
     width: 100%;
-    height: 600px;
+    height: 800px;
+    padding: 60px;
+
     
 
     h1{
@@ -14,18 +16,28 @@
     }
 
     h2{
-        color: rgb(58, 2, 2);
+        color: yellow;
         font-family: "Audiowide", sans-serif;
+        // font-family: "Sofia", sans-serif;
         padding-top: 5px;
         padding-bottom: 20px;
+        padding-left: 35px;
+    }
+
+    h3{
+        color:  rgb(247, 241, 241);
         padding-left: 20px;
+        
     }
 
     &__frontend{
         padding-left: 20px;
         padding-bottom: 20px;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto;
+        // justify-content: center;
+        align-items: center;
         column-gap: 5px;
         
         img{
@@ -45,7 +57,29 @@
     &__backend{
         padding-left: 20px;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 5px;
+
+        img{
+            width: 100px;
+            height: 100px;
+            padding: 15px 15px;
+            transition: 1s;
+        }
+
+        img:hover{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    
+    &__programmingLanguage{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto;
         column-gap: 5px;
 
         img{
