@@ -54,13 +54,15 @@
 
             &__button:hover{
                 box-shadow: 0px 0px 20px 5px rgb(201, 68, 68);
+                // color: rgb(247, 1, 1);
+                color: yellow;
             }
         }
 
         &__image{
             padding: 0px 0px 0px 10px;
             
-            img{
+            &__main{
                 border: solid 2px;
                 border-color: #000000;
                 border-radius: 500px;
@@ -70,13 +72,38 @@
                 background-color: yellow;
             }
 
-            img:hover{
+            &__main:hover{
                 height: 550px;
             }
-        }
 
-        
+            &__contact{
+                // font-family: $fontPrimary;
+                // font-size: 15px;
+                // font-weight: bold;
+                // border: solid 2px #d42121;
+                // border-radius: 100px;
+                // color: $fontColor;
+                // background-color: $buttonOneColor;
+                // padding: 20px 60px;
+                
+                &__link{
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                
+                    &__image{
+                        // size: 20px;
+                        object-fit: cover;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                
+                transition: box-shadow 0.5s;
+                
+            } 
+        } 
     }
-
 }
+
 
