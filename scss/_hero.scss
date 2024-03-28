@@ -85,23 +85,38 @@
                 // color: $fontColor;
                 // background-color: $buttonOneColor;
                 // padding: 20px 60px;
+                display: flex;
+                justify-content: space-evenly;
+
                 
                 &__link{
                     font-size: 20px;
                     text-decoration: none;
-                    display: block;
+                    // display: block;
                 
                     &__image{
                         // size: 20px;
                         object-fit: cover;
+                        border: solid 2px rgba(255, 0, 0, 0.771);
+                        border-radius: 20px;
                         width: 40px;
                         height: 40px;
+                        gap: 10px;
+                        // padding-right: 10px;
+                        transition: box-shadow 0.5s;
+                    }
+
+                    &__image:hover{
+
+                        box-shadow: 0px 0px 20px 5px rgb(201, 68, 68);
                     }
                 }
                 
-                transition: box-shadow 0.5s;
+                
                 
             } 
+
+            
         } 
     }
 }
